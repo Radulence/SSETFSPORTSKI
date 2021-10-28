@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body style="background-color: rgb(10, 10, 11);">
+
+  <a href="" class="logo" target="_blank">
+		<img class="logo1" src="logocijeli.png" alt="" >
+	</a>
+  
+  
+
+
+  <input type="checkbox" id="active">
+  <label for="active" id="nav" class="menu-btn"><i class="fas fa-bars"></i> 
+    <img id="ikona" src="https://img.icons8.com/carbon-copy/35/000000/diagonal-lines.png"/>
+    
+
+  </label>
+  <div class="wrapper">
+     <ul>
+        <li><a href="#">Pocetna</a></li>
+        <li><a href="#">Sportski kutak</a></li>
+        <li><a href="#"> Studentski kutak</a></li>
+        <li><a href="#">O nama</a></li>
+        
+     </ul>
+  </div>
+
+
+
+
+    
+    
+<div class="pozadina">
+    <img src="https://images.pexels.com/photos/797900/pexels-photo-797900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  alt="">
+</div>
+
+<div class="pozmob">
+  <img id="mobpoz" src="pozmob.jpeg" alt="">
+</div>
+
+<div class="wave">
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 390" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(228.105, 227.479, 226.093, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,234L40,240.5C80,247,160,260,240,253.5C320,247,400,221,480,234C560,247,640,299,720,325C800,351,880,351,960,312C1040,273,1120,195,1200,143C1280,91,1360,65,1440,58.5C1520,52,1600,65,1680,71.5C1760,78,1840,78,1920,78C2000,78,2080,78,2160,117C2240,156,2320,234,2400,234C2480,234,2560,156,2640,130C2720,104,2800,130,2880,169C2960,208,3040,260,3120,266.5C3200,273,3280,234,3360,208C3440,182,3520,169,3600,169C3680,169,3760,182,3840,169C3920,156,4000,117,4080,97.5C4160,78,4240,78,4320,104C4400,130,4480,182,4560,182C4640,182,4720,130,4800,104C4880,78,4960,78,5040,117C5120,156,5200,234,5280,260C5360,286,5440,260,5520,266.5C5600,273,5680,312,5720,331.5L5760,351L5760,390L5720,390C5680,390,5600,390,5520,390C5440,390,5360,390,5280,390C5200,390,5120,390,5040,390C4960,390,4880,390,4800,390C4720,390,4640,390,4560,390C4480,390,4400,390,4320,390C4240,390,4160,390,4080,390C4000,390,3920,390,3840,390C3760,390,3680,390,3600,390C3520,390,3440,390,3360,390C3280,390,3200,390,3120,390C3040,390,2960,390,2880,390C2800,390,2720,390,2640,390C2560,390,2480,390,2400,390C2320,390,2240,390,2160,390C2080,390,2000,390,1920,390C1840,390,1760,390,1680,390C1600,390,1520,390,1440,390C1360,390,1280,390,1200,390C1120,390,1040,390,960,390C880,390,800,390,720,390C640,390,560,390,480,390C400,390,320,390,240,390C160,390,80,390,40,390L0,390Z"></path></svg>
+</div>
+<div class="heading">
+<a id="heding"  target="_blank">Sportski kutak <br> <span id='span'>elektrotehnickog fakulteta</span></a>
+</div>
+
+<div class="container">
+  <div data-aos="flip-up" data-aos-once="true" class="shadows"><span>N</span><span>o</span><span>v</span><span>o</span><span>s</span><span>t</span><span>i</span></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="fudbal-kosarka">
+<button id="dugme2"  onclick="filterOpste()" class="btn button btn-transparent">Opste</button>
+<button  id="dugme2" onclick="filterFudbal()" class="btn button btn-transparent">Fudbal</button>
+<button  id="dugme2" onclick="filterKosarka()" class="btn button btn-transparent">Kosarka</button>
+
+
+<div id="opste"> 
+  
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        
+  
+        <div class="row" id="fudbalred" >
+  
+          
+  
+          <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+            <div class="slika2">
+            <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Opste</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="datum">29/08/98</p>
+              <a href="#" class="btn btn-primary">Procitaj vise</a>
+            </div>
+          </div>
+  
+          <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+            <div class="slika2">
+            <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Naslov</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="datum">29/08/98</p>
+              <a href="#" class="btn btn-primary">Procitaj vise</a>
+            </div>
+          </div>
+
+          <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+            <div class="slika2">
+            <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Naslov</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="datum">29/08/98</p>
+              <a href="#" class="btn btn-primary">Procitaj vise</a>
+            </div>
+          </div>
+  
+        </div>
+  
+  
+      </div>
+      <div class="carousel-item">
+       
+  
+        <div class="row" style="padding-left: 0;" id="fudbalred">
+  
+          <div id="karta"  class="card" style="width: 18rem; border-radius: 40px;">
+            <div class="slika2">
+            <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Naslov</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="datum">29/08/98</p>
+              <a href="#" class="btn btn-primary">Procitaj vise</a>
+            </div>
+          </div>
+  
+          <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+            <div class="slika2">
+            <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Naslov</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="datum">29/08/98</p>
+              <a href="#" class="btn btn-primary">Procitaj vise</a>
+            </div>
+          </div>
+  
+          <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+            <div class="slika2">
+            <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Naslov</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="datum">29/08/98</p>
+              <a href="#" class="btn btn-primary">Procitaj vise</a>
+            </div>
+          </div>
+  
+        </div>
+  
+  
+      </div>
+      <div class="carousel-item " id="kosarkared">
+        <div class="row">
+  
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+      </div>
+
+  
+  
+  
+    </div>
+
+    
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+
+
+  <div id="carouselOpsteMobilni" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        
+  
+        <div class="row" id="fudbalred" >
+  
+          
+  
+          <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+            <div class="slika2">
+            <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Opste</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="datum">29/08/98</p>
+              <a href="#" class="btn btn-primary">Procitaj vise</a>
+            </div>
+          </div>
+  
+          
+  
+        </div>
+  
+  
+      </div>
+      <div class="carousel-item">
+       
+  
+        <div class="row" style="padding-left: 0;" id="fudbalred">
+  
+          
+  
+          
+  
+          <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+            <div class="slika2">
+            <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Naslov</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="datum">29/08/98</p>
+              <a href="#" class="btn btn-primary">Procitaj vise</a>
+            </div>
+          </div>
+  
+        </div>
+  
+  
+      </div>
+      <div class="carousel-item row" id="kosarkared">
+        
+  
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+  
+  
+  
+    </div>
+
+
+    <div class="carousel-item row" id="kosarkared">
+        
+  
+      <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+        <div class="slika2">
+        <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="datum">29/08/98</p>
+          <a href="#" class="btn btn-primary">Procitaj vise</a>
+        </div>
+      </div>
+
+
+
+  </div>
+
+
+  <div class="carousel-item row" id="kosarkared">
+        
+  
+    <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+      <div class="slika2">
+      <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+    </div>
+      <div class="card-body">
+        <h5 class="card-title">Naslov</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="datum">29/08/98</p>
+        <a href="#" class="btn btn-primary">Procitaj vise</a>
+      </div>
+    </div>
+
+
+
+</div>
+
+
+<div class="carousel-item row" id="kosarkared">
+        
+  
+  <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+    <div class="slika2">
+    <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Naslov</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="datum">29/08/98</p>
+      <a href="#" class="btn btn-primary">Procitaj vise</a>
+    </div>
+  </div>
+
+
+
+</div>
+
+    
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOpsteMobilni" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselOpsteMobilni" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+
+
+</div>
+
+
+<div id="fudbal" class="fudbal">
+
+
+
+
+<div id="carouselFudbal" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+
+      <div class="row" id="fudbalred" >
+
+        
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Opste</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="carousel-item">
+     
+
+      <div class="row" style="padding-left: 0;" id="fudbalred">
+
+        <div id="karta"  class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="carousel-item " id="kosarkared">
+      <div class="row">
+
+      <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+        <div class="slika2">
+        <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="datum">29/08/98</p>
+          <a href="#" class="btn btn-primary">Procitaj vise</a>
+        </div>
+      </div>
+
+      <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+        <div class="slika2">
+        <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="datum">29/08/98</p>
+          <a href="#" class="btn btn-primary">Procitaj vise</a>
+        </div>
+      </div>
+
+      <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+        <div class="slika2">
+        <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="datum">29/08/98</p>
+          <a href="#" class="btn btn-primary">Procitaj vise</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselFudbal" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselFudbal" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+ 
+
+<div id="carouselFudbalMobilni" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+
+      <div class="row" id="fudbalred" >
+
+        
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Opste</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+
+    </div>
+    <div class="carousel-item">
+     
+
+      <div class="row" style="padding-left: 0;" id="fudbalred">
+
+        
+
+        
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="carousel-item row" id="kosarkared">
+      
+
+      <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+        <div class="slika2">
+        <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="datum">29/08/98</p>
+          <a href="#" class="btn btn-primary">Procitaj vise</a>
+        </div>
+      </div>
+
+
+
+  </div>
+
+
+  <div class="carousel-item row" id="kosarkared">
+      
+
+    <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+      <div class="slika2">
+      <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+    </div>
+      <div class="card-body">
+        <h5 class="card-title">Naslov</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="datum">29/08/98</p>
+        <a href="#" class="btn btn-primary">Procitaj vise</a>
+      </div>
+    </div>
+
+
+
+</div>
+
+
+<div class="carousel-item row" id="kosarkared">
+      
+
+  <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+    <div class="slika2">
+    <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Naslov</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="datum">29/08/98</p>
+      <a href="#" class="btn btn-primary">Procitaj vise</a>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<div class="carousel-item row" id="kosarkared">
+      
+
+<div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+  <div class="slika2">
+  <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+</div>
+  <div class="card-body">
+    <h5 class="card-title">Naslov</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="datum">29/08/98</p>
+    <a href="#" class="btn btn-primary">Procitaj vise</a>
+  </div>
+</div>
+
+
+
+</div>
+
+  
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselFudbalMobilni" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselFudbalMobilni" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+
+</div>
+
+<div class="kosarka" id="kosarka">
+
+
+
+<div id="carouselKosarka" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+
+      <div class="row"  >
+
+        
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Opste</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <div class="carousel-item">
+     
+
+      <div class="row" style="padding-left: 0;" >
+
+        <div id="karta"  class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="carousel-item " >
+      
+      <div class="row">
+
+      <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+        <div class="slika2">
+        <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="datum">29/08/98</p>
+          <a href="#" class="btn btn-primary">Procitaj vise</a>
+        </div>
+      </div>
+
+      <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+        <div class="slika2">
+        <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="datum">29/08/98</p>
+          <a href="#" class="btn btn-primary">Procitaj vise</a>
+        </div>
+      </div>
+
+      <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+        <div class="slika2">
+        <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="datum">29/08/98</p>
+          <a href="#" class="btn btn-primary">Procitaj vise</a>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselKosarka" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselKosarka" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+  
+
+<div id="carouselKosarkaMobilni" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+
+      <div class="row" id="fudbalred" >
+
+        
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Opste</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+
+    </div>
+    <div class="carousel-item">
+     
+
+      <div class="row" style="padding-left: 0;" id="fudbalred">
+
+        
+
+        
+
+        <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+          <div class="slika2">
+          <img id="slika"  src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <h5 class="card-title">Naslov</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="datum">29/08/98</p>
+            <a href="#" class="btn btn-primary">Procitaj vise</a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="carousel-item row" id="kosarkared">
+      
+
+      <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+        <div class="slika2">
+        <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Naslov</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="datum">29/08/98</p>
+          <a href="#" class="btn btn-primary">Procitaj vise</a>
+        </div>
+      </div>
+
+
+
+  </div>
+
+
+  <div class="carousel-item row" id="kosarkared">
+      
+
+    <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+      <div class="slika2">
+      <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+    </div>
+      <div class="card-body">
+        <h5 class="card-title">Naslov</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="datum">29/08/98</p>
+        <a href="#" class="btn btn-primary">Procitaj vise</a>
+      </div>
+    </div>
+
+
+
+</div>
+
+
+<div class="carousel-item row" id="kosarkared">
+      
+
+  <div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+    <div class="slika2">
+    <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Naslov</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="datum">29/08/98</p>
+      <a href="#" class="btn btn-primary">Procitaj vise</a>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<div class="carousel-item row" id="kosarkared">
+      
+
+<div id="karta"   class="card" style="width: 18rem; border-radius: 40px;">
+  <div class="slika2">
+  <img id="slika"  src="https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+</div>
+  <div class="card-body">
+    <h5 class="card-title">Naslov</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="datum">29/08/98</p>
+    <a href="#" class="btn btn-primary">Procitaj vise</a>
+  </div>
+</div>
+
+
+
+</div>
+
+  
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselKosarkaMobilni" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselKosarkaMobilni" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="rezultati1">
+
+  <div  class="rezultati"><span>R</span><span>E</span><span>Z</span><span>U</span><span>L</span><span>T</span><span>A</span><span>T</span><span>I</span></div>
+<div class="rezultatidiv">
+<div class="rezdugmad">
+  <button id="rezfudb" onclick="rezultatiFudbal()" class="btn button">Fudbal</button>
+  <button id="rezkos" onclick="rezultatiKosarka()" class="btn button" >Kosarka</button>
+</div>
+<br> <br>
+  
+ 
+
+<div id="kolofudbal" class="fudbalkola">
+
+  <div id="fudbalscore" class="fudbalrez">
+    <div class="slideshow-container">
+  
+      <div class="mySlides fade" style="opacity: 1; display: block;">
+      
+        <div id="match-details-curtain">
+          <div id="match-details-container">
+              <div id="title">1. Kolo</div>
+              <div id="teams-container">
+                  <div class="homecomming-team flexbox-items">
+                      <div class="homecomming-team logo"></div>
+                      <br />
+                      <div class="homecomming-team name">ETF</div>
+                  </div>
+                  <div class="flexbox-items">
+                      <div id="time-of-match">20:45</div>
+                      <div id="date-of-match">16. Septembar 2021</div>
+                      <br />
+                      <div id="vs"><div class="circle"></div><hr id="vs-line"/><div class="circle"></div></div>
+                  </div>
+                  <div class="away-team flexbox-items">
+                      <div class="away-team logo"></div>
+                      <br />
+                      <div class="away-team name">DIF</div>
+                  </div>
+              </div>
+              <div id="score-container">
+                  <div class="homecomming-team score">3</div>
+                  <div class="away-team score">1</div>
+              </div>
+              <hr id="bottom-devider" />
+              
+          </div>
+      </div>
+      
+      </div>
+      
+      <div class="mySlides fade" style="opacity: 1;">
+        
+        <div id="match-details-curtain">
+          <div id="match-details-container">
+              <div id="title">2. Kolo</div>
+              <div id="teams-container">
+                  <div class="homecomming-team flexbox-items">
+                      <div class="homecomming-team logo"></div>
+                      <br />
+                      <div class="homecomming-team name">ETF</div>
+                  </div>
+                  <div class="flexbox-items">
+                      <div id="time-of-match">20:45</div>
+                      <div id="date-of-match">16. Septembar 2021</div>
+                      <br />
+                      <div id="vs"><div class="circle"></div><hr id="vs-line"/><div class="circle"></div></div>
+                  </div>
+                  <div class="away-team flexbox-items">
+                      <div class="away-team logo"></div>
+                      <br />
+                      <div class="away-team name">DIF</div>
+                  </div>
+              </div>
+              <div id="score-container">
+                  <div class="homecomming-team score">/</div>
+                  <div class="away-team score">/</div>
+              </div>
+              <hr id="bottom-devider" />
+              
+          </div>
+      </div>
+        
+      </div>
+      
+      <div class="mySlides fade" style="opacity: 1;">
+       
+        <div id="match-details-curtain">
+          <div id="match-details-container">
+              <div id="title">3. Kolo</div>
+              <div id="teams-container">
+                  <div class="homecomming-team flexbox-items">
+                      <div class="homecomming-team logo"></div>
+                      <br />
+                      <div class="homecomming-team name">ETF</div>
+                  </div>
+                  <div class="flexbox-items">
+                      <div id="time-of-match">20:45</div>
+                      <div id="date-of-match">16. Septembar 2021</div>
+                      <br />
+                      <div id="vs"><div class="circle"></div><hr id="vs-line"/><div class="circle"></div></div>
+                  </div>
+                  <div class="away-team flexbox-items">
+                      <div class="away-team logo"></div>
+                      <br />
+                      <div class="away-team name">DIF</div>
+                  </div>
+              </div>
+              <div id="score-container">
+                  <div class="homecomming-team score">/</div>
+                  <div class="away-team score">/</div>
+              </div>
+              <hr id="bottom-devider" />
+              
+          </div>
+      </div>
+        
+      </div>
+      
+      <a id="proslifudb" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a id="sledecifudb" class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+  
+  
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1), prikazStrelica()"></span> 
+        <span class="dot" onclick="currentSlide(2), prikazStrelica()"></span> 
+        <span class="dot" onclick="currentSlide(3), prikazStrelica()"></span> 
+      </div>
+      
+    </div>
+      
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div id="kolokosarka" class="kosarkakola">
+
+aaaaaaaaaaaaaaaaaaaa
+
+<div class="slideshow-container">
+  
+  <div class="mySlides1 fade " style="opacity: 1;  ">
+  
+    <div id="match-details-curtain">
+      <div id="match-details-container">
+          <div id="title">1. Kolo</div>
+          <div id="teams-container">
+              <div class="homecomming-team flexbox-items">
+                  <div class="homecomming-team logo"></div>
+                  <br />
+                  <div class="homecomming-team name">ETF</div>
+              </div>
+              <div class="flexbox-items">
+                  <div id="time-of-match">20:45</div>
+                  <div id="date-of-match">16. Septembar 2021</div>
+                  <br />
+                  <div id="vs"><div class="circle"></div><hr id="vs-line"/><div class="circle"></div></div>
+              </div>
+              <div class="away-team flexbox-items">
+                  <div class="away-team logo"></div>
+                  <br />
+                  <div class="away-team name">DIF</div>
+              </div>
+          </div>
+          <div id="score-container">
+              <div class="homecomming-team score">92</div>
+              <div class="away-team score">62</div>
+          </div>
+          <hr id="bottom-devider" />
+          
+      </div>
+  </div>
+  
+  </div>
+  
+  <div class="mySlides1 fade" style="opacity: 1;">
+    
+    <div id="match-details-curtain">
+      <div id="match-details-container">
+          <div id="title">2. Kolo</div>
+          <div id="teams-container">
+              <div class="homecomming-team flexbox-items">
+                  <div class="homecomming-team logo"></div>
+                  <br />
+                  <div class="homecomming-team name">ETF</div>
+              </div>
+              <div class="flexbox-items">
+                  <div id="time-of-match">20:45</div>
+                  <div id="date-of-match">16. Septembar 2021</div>
+                  <br />
+                  <div id="vs"><div class="circle"></div><hr id="vs-line"/><div class="circle"></div></div>
+              </div>
+              <div class="away-team flexbox-items">
+                  <div class="away-team logo"></div>
+                  <br />
+                  <div class="away-team name">DIF</div>
+              </div>
+          </div>
+          <div id="score-container">
+              <div class="homecomming-team score">/</div>
+              <div class="away-team score">/</div>
+          </div>
+          <hr id="bottom-devider" />
+          
+      </div>
+  </div>
+    
+  </div>
+  
+  <div class="mySlides1 fade" style="opacity: 1;">
+   
+    <div id="match-details-curtain">
+      <div id="match-details-container">
+          <div id="title">3. Kolo</div>
+          <div id="teams-container">
+              <div class="homecomming-team flexbox-items">
+                  <div class="homecomming-team logo"></div>
+                  <br />
+                  <div class="homecomming-team name">ETF</div>
+              </div>
+              <div class="flexbox-items">
+                  <div id="time-of-match">20:45</div>
+                  <div id="date-of-match">16. Septembar 2021</div>
+                  <br />
+                  <div id="vs"><div class="circle"></div><hr id="vs-line"/><div class="circle"></div></div>
+              </div>
+              <div class="away-team flexbox-items">
+                  <div class="away-team logo"></div>
+                  <br />
+                  <div class="away-team name">DIF</div>
+              </div>
+          </div>
+          <div id="score-container">
+              <div class="homecomming-team score">/</div>
+              <div class="away-team score">/</div>
+          </div>
+          <hr id="bottom-devider" />
+          
+      </div>
+  </div>
+    
+  </div>
+  
+  <a id="proslikos" class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+  <a id="sledecikos" class="next" onclick="plusSlides1(1)">&#10095;</a>
+  
+  </div>
+  <br>
+
+
+  
+  <div style="text-align:center">
+    <span class="dot1" onclick="currentSlide1(1), prikazStrelica1() "></span> 
+    <span class="dot1" onclick="currentSlide1(2), prikazStrelica1() "></span> 
+    <span class="dot1" onclick="currentSlide1(3), prikazStrelica1() "></span> 
+  </div>
+  
+</div>
+
+
+
+  
+ </div>
+
+
+
+  
+
+
+
+
+
+</div>
+
+</div>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="app1.js"></script>
+  </body>
+</html>

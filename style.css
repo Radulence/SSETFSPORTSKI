@@ -1,0 +1,1018 @@
+body {
+    background-color: rgb(12, 12, 12);
+    overflow-x: hidden;
+}
+
+.pozadina {
+    position: relative;
+    left: -80px;
+    top: -450px;
+    transform: scaleX(1);
+    transform: scaleY(0.8);
+    z-index: -10;
+}
+
+.wave {
+    position: relative;
+    top: -1450px;
+    width: 102%;
+    left: -8px;
+    transform: scaleY(0.8);
+    z-index: -9;
+}
+
+.logo3 {
+  display: none;
+}
+
+
+/*--------------------------------------HEDING---------------------------------------------*/
+
+
+@keyframes tipsy {
+    0% {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+  
+  body {
+    font-family: helvetica, arial, sans-serif;
+    
+  }
+  
+  #heding {
+    color: #fffbf1;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  #heding:before,
+  #heding:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 15px solid red;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+    box-sizing: unset;
+  }
+  
+  #heding:before {
+    border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  #heding:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+  }
+  
+  #span {
+  font-size: 40px;
+  position: relative;
+  top: -20px;
+  }
+
+  
+
+
+  /*---------------------------KRAJ HEDINGA----------------------------------------------------*/
+  
+
+
+  .wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 998;
+    width: 100%;
+    background: linear-gradient(-135deg, #6e9ff8, #4158d0);
+    
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+    /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+    clip-path: circle(20px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+  }
+  #active:checked ~ .wrapper{
+    clip-path: circle(75% at 94% 51%);
+  }
+  .menu-btn{
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    /* left: 20px; */
+    top: 20px;
+    height: 50px;
+   
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+  
+    color: #fff;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0);
+  
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+    transition: all 0.3s ease-in-out;
+  }
+  #active:checked ~ .menu-btn{
+    background: #fff;
+    color: #4158d0;
+    border-radius: 50%;
+    border: none;
+    left: 1270px;
+  }
+  #active:checked ~ .menu-btn i:before{
+    content: "\f00d";
+    border-radius: 50%;
+  
+  }
+  .wrapper ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+  }
+  .wrapper ul li{
+    margin: 15px 0;
+  }
+  .wrapper ul li a{
+    color: none;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 30px;
+    color: #fff;
+    position: relative;
+    line-height: 50px;
+    transition: all 0.3s ease;
+  }
+  .wrapper ul li a:after{
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    border-radius: 50px;
+    transform: scaleY(0);
+    z-index: -1;
+    transition: transform 0.3s ease;
+  }
+  .wrapper ul li a:hover:after{
+    transform: scaleY(1);
+  }
+  .wrapper ul li a:hover{
+    color: #4158d0;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  
+  
+  #ikona{
+    position: fixed;
+    top: 28px;
+    right: 28px;
+  }
+
+  .logo {
+      z-index: 9999;
+  }
+
+  #nav {
+    position: fixed;
+    left: -80px;
+  }
+
+  #active {
+    position: fixed;
+  }
+
+
+/*----------------------------------FUDBAL KOSARKA----------------------*/
+.fudbal-kosarka {
+  background-color: rgb(83, 83, 83);
+  position: relative;
+  top: -1100px;
+}
+
+#opste {
+  display: block;
+}
+
+#fudbal {
+  display: none;
+}
+
+#kosarka {
+  display: none;
+}
+
+
+
+
+/*---------------------------KRAJ FUDABAL KOSARKA-------------------------------*/
+
+.pozmob {
+  display: none;
+}
+
+
+
+/*-----------------------------------------KARTE-----------------------------------------------------*/
+
+.container {
+  width: 100vw;
+  position: relative;
+  top: -1000px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shadows {
+  position: relative;
+  text-transform: uppercase;
+  text-shadow: -15px 5px 20px #ced0d3;
+  color: white;
+  letter-spacing: 10px;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bolder;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-transform: uppercase;
+  font-size: 80px;
+  transition: all 0.25s ease-out;
+}
+
+.shadows:hover {
+  text-shadow: -16px 6px 15px #ced0d3;
+}
+
+
+
+.card {
+  margin-right: 20px;
+  padding-left: 0;
+  padding-right: 10px;
+  transform: scale(0.8);
+}
+
+#slika2 {
+  height: 60px;
+  width: auto;
+}
+
+#slika {
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  
+  height: 260px;
+}
+
+.card-body {
+  height: 240px;
+  padding: 2px;
+}
+
+#karta {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row {
+  position: relative;
+  left: 250px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#dugme2 {
+
+background: radial-gradient(rgb(0, 0, 0), rgb(58, 56, 56));
+border: none;
+margin-left: 10px;
+margin-top: 10px;
+color: white;
+border-radius: 20px;
+}
+
+
+
+#carouselOpsteMobilni {
+  display: none;
+}
+
+#carouselFudbalMobilni {
+  display: none;
+}
+
+#carouselKosarkaMobilni {
+  display: none;
+}
+
+
+#navslika {
+  display: block;
+  z-index: 999;
+}
+
+
+
+
+/*---------REZULTATIIIIIIIIIIII-----------------------------------------------*/
+
+.rezultatidiv {
+  /*background-color: rgb(145, 143, 143);*/
+ 
+}
+
+
+
+.rezultati {
+  position: relative;
+  text-transform: uppercase;
+  text-shadow: -15px 5px 20px #ced0d3;
+  color: white;
+  letter-spacing: 10px;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: bolder;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-transform: uppercase;
+  font-size: 50px;
+  transition: all 0.25s ease-out;
+  align-self: center;
+  justify-content: center;
+  justify-self: center;
+  position: relative;
+  left: 40%;
+  top: -450px;
+}
+
+.rezultati:hover {
+  text-shadow: -6px 6px 6px #ced0d3;
+}
+
+
+
+#match-details-curtain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: -220px;
+  left: 0;
+  z-index: 500;
+  transform: scaleX(1.2);
+  opacity: 1;
+}
+/* Match details container */
+#match-details-container {
+  position: relative;
+  color: #F3EFF5;
+  background-color: #454955;
+  width: 480px;
+  padding: 2em 1em;
+  border-radius: 6px;
+  z-index: 90;
+  -webkit-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+  opacity: 1;
+}
+
+#title {
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#title::before, #title::after {
+  content: '';
+  display: block;
+  width: 45%;
+  border-bottom: 2px solid #99C24D;
+  margin: 0 auto;
+  margin-top: 0.2em;
+}
+
+#title::before {
+  margin-bottom: 0.1em;
+  width: 60%;
+}
+
+#teams-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.flexbox-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33333%;
+}
+
+.logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.name {
+  font-size: 1.2em;
+}
+
+#date-of-match {
+  width: 100%;
+  text-align: center;
+}
+
+#time-of-match {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0.1em;
+  margin-top: -0.4em;
+}
+
+#vs {
+  width: 100%;
+  position: relative;
+  margin-left: 5px;
+}
+
+#vs-line {
+  width: 80%;
+  float: left;
+  margin-top: 4px;
+  border: 0;
+  border-bottom: 2px dashed #ccc;
+}
+
+.circle {
+  display: block;
+  float: left;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 2px solid #F3EFF5;
+  transform:rotate(360deg); /* for smoother circle */
+  -ms-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+}
+
+#score-container {
+  display: block;
+  width: 30%;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.score {
+  position: relative;
+  width: calc(50% - 3px);
+  height: 60px;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+  border: 2px solid #F3EFF5;
+  border-right: 2px solid #F3EFF5;
+  background-color: #454955;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.away-team.score {
+  float: right;
+  border-right: 2px solid #F3EFF5;
+  border-left: 2px solid #F3EFF5;
+}
+
+.winner {
+  color: #02111B;
+  background-color: #99C24D;
+}
+
+#bottom-devider {
+  margin-top: 2em;
+  border: none;
+  border-bottom: 2px solid #99C24D;
+  opacity: 1;
+}
+
+
+#close-details {
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+#close-details::before, #close-details::after {
+  content:'';
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  border-bottom: 2px solid #F3EFF5;
+  transform: rotate(45deg);
+}
+
+#close-details::after {
+  margin-top: -2px;
+  transform: rotate(-45deg);
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+
+.mySlides {display: none;
+  top: 200px;
+  position: relative;
+  display: block;
+  
+}
+
+.mySlides1 {display: none;
+  top: 200px;
+  position: relative;
+  display: block;
+  
+}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  color: white;
+  height: 100vh;
+  
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: -5%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  display: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  display: none;
+  
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  position: relative;
+  margin-bottom: 70px;
+  top: -450px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(53, 52, 52);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot1 {
+  cursor: pointer;
+  height: 15px;
+  position: relative;
+  margin-bottom: 70px;
+  top: -450px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(53, 52, 52);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgba(83, 83, 83, 0.445);
+}
+
+.active, .dot1:hover {
+  background-color: rgba(83, 83, 83, 0.445);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.fudbalrez {
+  display: block;
+}
+
+.rezdugmad {
+  position: relative;
+  top: -250px;
+  color: white;
+  left: 20px;
+}
+
+#rezfudb {
+  color: white;
+  font-size: 18px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 20px;
+}
+
+#rezkos {
+  color: white;
+  font-size: 18px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 20px;
+}
+
+.fudbalkola {
+  display: block;
+}
+
+.kosarkakola{
+  display: none;
+}
+
+a.button {
+  display:inline-block;
+  width:100px;
+  height:50px;
+  background-color:blue;
+  color:#fff;
+  line-height:50px;
+  text-align:center;
+  text-decoration: none;
+}
+
+a.active {
+  background-color:red;
+}
+
+.content {
+  margin-top:30px;
+}
+
+div[class*="content-"] { 
+  display:none;
+}
+
+div.active { 
+  display:block;
+}
+
+
+
+/*--------------------------RESPONSIVE ZA MOBILNE-------------------------------------*/
+
+@media only screen and (max-width: 770px) {
+
+body {
+  overflow-x: hidden;
+  max-width: 360px;
+}
+
+.pozadina  {
+  display: none;
+}
+
+.pozmob {
+  display: block;
+  position: relative;
+  top: -72px;
+  left: 5px;
+  width: 100%;
+  transform: scaleX(1.15);
+}
+
+.logo {
+}
+
+.logo1 {
+  transform: scale(0.38);
+  position: relative;
+  left: -75px;
+  top: -17px;
+  z-index: 10;
+}
+
+.wave {
+  position: relative;
+  top: -621px;
+  z-index: 5;
+  left: -10px;
+  width: 110%;
+  transform: scaleY(2.2);
+}
+
+
+#heding {
+  font-size: 30px;
+}
+
+#span {
+  font-size: 10px;
+  letter-spacing: 1px;
+  
+}
+
+
+
+
+li:nth-child(1) {
+  font-size: -31px;
+  height: 20px;
+  margin: 10px;
+  
+  transform: scale(0.8);
+}
+
+li:nth-child(2) {
+  font-size: xx-small;
+  height: 20px;
+  margin: 10px;
+  
+  transform: scale(0.8);
+}
+
+li:nth-child(3) {
+  font-size: xx-small;
+  height: 20px;
+  margin: 10px;
+  top: 10px;
+  transform: scale(0.8);
+}
+
+li:nth-child(4) {
+  font-size: xx-small;
+  height: 20px;
+  margin: 10px;
+  top: 10px;
+  transform: scale(0.8);
+}
+
+.wrapper ul {
+  width: 100%;
+  position: relative;
+  top: 30%;
+}
+
+#ikona {
+transform: scale(0.6);
+
+}
+
+.container {
+  top: -250px;
+  font-size: 30px;
+}
+
+.shadows {
+  font-size: 30px;
+}
+
+#heding:before, #heding:after {
+  content: '';
+  padding: 1.2em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 49%;
+  display: block;
+  border: 10px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(
+0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+  box-sizing: unset;
+}
+
+#heding:before {
+  border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+#heding:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+  box-shadow: 6px 6px 6px rgba(46, 46, 49, .8);
+}
+
+#active {
+  position: fixed;
+}
+
+#nav {
+  position: fixed;
+  left: 310px;
+}
+
+.wrapper{
+  left: -57px;
+  width: 100%;
+  
+  
+}
+
+#ikona {
+  position: fixed;
+  left: 310px;
+}
+
+
+
+/*---------------------KArte mob-----------------------------------------*/
+
+#opste {
+  transform: scale(0.9);
+  position: relative;
+  
+}
+
+.card {
+  left: -55%;
+  
+
+}
+
+#carouselOpsteMobilni {
+  display: block;
+  position: relative;
+}
+
+#carouselFudbalMobilni {
+  display: block;
+}
+
+#carouselExampleControls {
+  display: none;
+}
+#carouselFudbal {
+  display: none;
+}
+
+#carouselKosarka {
+  display: none;
+}
+
+#carouselKosarkaMobilni {
+  display: block;
+}
+
+.rezultatidiv {
+  transform: scale(0.6);
+  position: relative;
+  left: 9px;
+}
+
+.prev {
+  position: relative;
+  left: -90px;
+  
+}
+
+.next {
+  position: relative;
+  left: 410px;
+  top: -65px;
+}
+
+.prev:hover{
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.dot {
+  top: -470px;
+}
+
+.dot1 {
+  top: -470px;
+}
+
+
+.rezultati {
+  font-size: 30px;
+  left: 70px;
+  top: -30px;
+}
+
+.fudbal-kosarka {
+  top: -450px;
+  width: 110%;
+}
+
+#active:checked ~ .menu-btn{
+  background: #fff;
+  color: #4158d0;
+  border-radius: 50%;
+  border: none;
+  left: 300px;
+}
+
+}
